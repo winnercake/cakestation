@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+/* 폰트 적용 */
+@font-face{
+	font-family: "NanumBarunpenR";
+	src: url("/css/font/NanumBarunpenR.ttf"); /* 가는 글씨체 */
+}
+@font-face{
+	font-family: "NanumBarunpenB";
+	src: url("/css/font/NanumBarunpenB.ttf"); /* 굵은 글씨체 */
+}	
+
+/* -- 공통 */
+/*div{
+	border :1px solid black;
+	box-sizing : border-box;
+}
+section{
+	border :1px solid black;
+	box-sizing : border-box;
+}*/
+ul{
+	list-style-type:none;
+	margin : 0px;
+	height : 40px;
+	background-color: rgb(250, 225, 221);
+	text-align: center;
+}
+li{
+	float: left;
+    width: 20%;
+    line-height: 40px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+img{
+	position: relative;
+	margin-top: -10px;
+	left: 45%;
+}
+/* .wrapper{
+	width: 1300px;
+	margin-left: left;
+	margint-right: left;
+} */
+
+/* 헤더 */
+#header-user{
+	background-color:whight;
+	text-align: right;
+	height: 30px;
+	line-height : 30px;
+}
+#header-logo{
+	background-color:whight;
+	height : 100px;
+}
+
+/* 메인 */
+main{
+	height: 1500px;
+}
+
+
+/* 푸터 */
+footer{
+ 	background-color:rgb(236, 236, 254);
+ 	height: 150px;
+}
+	.footer-layer{
+		float: left;
+		width: 33%;
+	 }
+	 #footer-lay1{
+	 	line-height: 10px;
+	 	position:relative;
+	 	left: 70px;
+	 	top: 20px;
+	  	text-align: left;
+	 	height: 100px;
+	 }
+		 #footer-lay1 button{
+		 	background-color: black;
+		 	color : white;
+		 	border-radius: 10px;
+		 	position: relative;
+		 	top: -30px;
+		 	left: 230px;
+		 }
+	 #footer-lay2{
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	 	text-align: center;
+	 	height: inherit;
+	 }
+		 #footer-lay2 img{
+		 	position: relative;
+		 	top: 70px;
+		 	left: -130px;
+		 }
+		 #footer-lay2 p{
+		 	font-size:20px;
+		 	position: relative;
+		 	top: 15px;
+		 	left: 20px;
+		 }
+	 #footer-lay3{
+	 	line-height: 8px;
+	  	height: inherit;
+	  	position:relative;
+	 	left: 80px;
+	 	width: 350px;
+	 	height: 110px;
+	 	top: 10px;
+	 	text-align:left;
+	 }
+		.footer-bold{
+		 	font-size:20px;
+		 	font-weight: bold;
+		 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<h4>회원 정보를 입력하세요</h4>
+	<form action="/shop/enroll" method="post">
+	<fieldset>
+		<legend>회원가입</legend>
+		<ul>
+			<li>대표자 이름 : <input type="text" name="user-name"></li><br>
+			<li>아이디 : <input type="text" name="user-id" placeholder="아이디를 입력해주세요"></li><br>
+			<li>비밀번호 : <input type="password" name="user-pwd"></li><br>
+			<li>비밀번호 확인 : <input type="password" name="user-pwd-re"></li><br>
+			<li>사업자등록번호 : <input type="file" name="user-crn"></li><br>
+			<li>상호명: <input type="text" name="user-shop-name"></li><br>
+			<li>전화번호 : <input type="tel" name="user-phone"></li><br> <!-- 타입 수정 -->
+			<li>이메일 : <input type="email" name="user-email"></li><br> <!-- 타입 수정 -->
+			<li>주소 : <br>
+			시도<select name="user-L-add">
+				<option value="서울특별시">서울특별시</option>
+				<option value="부산광역시">부산광역시</option>
+				<option value="대구광역시">대구광역시</option>
+				<option value="인천광역시">인천광역시</option>
+				<option value="광주광역시">광주광역시</option>
+				<option value="대전광역시">대전광역시</option>
+				<option value="울산광역시">울산광역시</option>
+				<option value="세종특별자치시">세종특별자치시</option>
+				<option value="경기도">경기도</option>
+				<option value="강원도">강원도</option>
+				<option value="충청북도">충청북도</option>
+				<option value="충청남도">충청남도</option>
+				<option value="전라북도">전라북도</option>
+				<option value="전라남도">전라남도</option>
+				<option value="경상북도">경상북도</option>
+				<option value="경상남도">경상남도</option>
+				<option value="제주특별자치도">제주특별자치도</option>
+			</select>
+			시군구 <input type="text" name="user-M-add">
+			이하주소 <input type="text" name="user-S-add"></li><br> <!-- 타입 수정(시도,시군구,이하주소) -->
+			<li>은행 : 
+			<select name="user-bank">
+				<option value="국민">국민</option>
+				<option value="하나">하나</option>
+				<option value="기업">기업</option>
+			</select></li>
+			<li>계좌 : <input type="text" name="user-accountNo"></li>
+			<li>예금주 : <input type="text" name="user-depositor"></li><br>
+			<!-- 가입일시 | 위도, 경도 | 평점 | 가입승인여부-->
+			<li>약관 동의 : 
+			<input type="radio" name="agree" value="Y"> 동의
+			<input type="radio" name="agree" value="N"> 비동의</li><br>
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소">
+		</ul>
+	</fieldset>
+	</form>
+</body>
+</html>
