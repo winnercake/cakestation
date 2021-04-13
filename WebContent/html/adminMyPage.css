@@ -1,0 +1,94 @@
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+header h1{
+    text-align: center;
+}
+
+#hd-main{
+    height: 120px;
+    width: inherit;
+    background-color: white;
+}
+
+#hd-nav{
+    height: 20px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#nav-main{
+    height: 30px;
+    background-color: lightpink;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#nav-main li {
+    display: inline;
+    text-align: center;
+    margin: 6%;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+aside{
+    margin-left: 5%;
+    height: 500px;
+    width: 18%;
+    float: left;
+    text-align: center;
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+#aside1{
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aside2{
+    font-size: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+section {
+    height: 500px;
+    width: 75%;
+    float: left;
+    background-color: white;
+}
+
+footer{
+    margin-left: 5%;
+    float: left;
+}
+
+#signup-list {
+    margin-left: 5%;
+}
+
+#sub-title {
+    margin-left: 5%;
+}
+
+
+.hdlink{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+

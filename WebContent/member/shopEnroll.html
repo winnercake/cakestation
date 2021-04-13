@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<h4>회원 정보를 입력하세요</h4>
+	<form action="/member/enroll" method="post">
+	<fieldset>
+		<legend>회원가입</legend>
+		<ul>
+			<li>아이디 : <input type="text" name="user-id" placeholder="아이디를 입력해주세요"></li><br>
+			<li>비밀번호 : <input type="password" name="user-pwd"></li><br>
+			<li>업체명: <input type="text" name="user-shop-name"></li><br>
+			<li>대표자 이름 : <input type="text" name="user-name"></li><br>
+			<li>주소 : <input type="text" name="user-address"></li><br> <!-- 타입 수정(시도,시군구,이하주소) -->
+			<li>전화번호 : <input type="text" name="user-phone"></li><br> <!-- 타입 수정 -->
+			<li>이메일 : <input type="text" name="user-email"></li><br> <!-- 타입 수정 -->
+			<li>사업자등록번호 : <input type="text" name="user-crn"></li><br>
+			<li>은행 : 
+			<select name="user-bank">
+				<option value="국민">국민</option>
+				<option value="하나">하나</option>
+				<option value="기업">기업</option>
+			</select></li>
+			<li>계좌 : <input type="text" name="user-accountNo"></li>
+			<li>예금주 : <input type="text" name="user-depositor"></li><br>
+			<!-- 가입일시 | 위도, 경도 | 평점 | 가입승인여부-->
+			<li>정보수신 동의 : 
+			<input type="radio" name="agree" value="Y"> 동의
+			<input type="radio" name="agree" value="N"> 비동의</li><br>
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소">
+		</ul>
+	</fieldset>
+	</form>
+</body>
+</html>
